@@ -20,6 +20,7 @@ body {
     line-height: 1.6;
 }
 
+/* Header / Hero */
 header {
     background: var(--primary-gradient);
     color: white;
@@ -51,8 +52,14 @@ p {
     font-size: 1.2rem;
     border-radius: var(--border-radius);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
+.cta-button:hover {
+    background: #f0f0f0;
+}
+
+/* Sections */
 section {
     padding: 4rem 1rem;
     text-align: center;
@@ -63,6 +70,7 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Features */
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -83,6 +91,7 @@ section {
     transform: scale(1.05);
 }
 
+/* Gallery */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -102,6 +111,28 @@ section {
     transform: scale(1.03);
 }
 
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    font-family: var(--font-arabic);
+}
+
+.contact-form button {
+    align-self: center;
+}
+
+/* Footer */
 footer {
     background: var(--accent-color);
     color: white;
@@ -109,6 +140,7 @@ footer {
     padding: 2rem;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
